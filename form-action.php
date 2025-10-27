@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -11,13 +11,13 @@
     echo $_POST['lastname'] . "<br>";
     echo $_POST['avatar'] . "<br>";
 
-    $con new mysqli("localhost", "root", "", "crud")
+    $con = new mysqli("localhost", "root", "", "crud");
     
     if ($con->connect_error) {
-        die("Connection failed: " . $con_error);
+        die("Connection failed: " . $con->connect_error);
     }
 
     $sql = 'INSERT INTO '
     ?>
-    </body>
-    </html>
+</body>
+</html>

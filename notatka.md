@@ -9,9 +9,9 @@ if ($mySQLconnect->connect_error) {
     } else {
         echo "Połączono z bazą danych! </br>";
     }
-```
+
 2. Pobieranie danych
-```php
+
 $sql = 'SELECT * FROM crude';
         $result = $mySQLconnect->query($sql);
         // $result = $result->fetch_assoc();

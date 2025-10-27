@@ -9,6 +9,8 @@
     <p>ehrj</p>
     <?php
 
+// use LDAP\Result;
+
     $mySQLconnect = new mysqli("localhost", "root", "", "crud");
 
     if ($mySQLconnect->connect_error) {
